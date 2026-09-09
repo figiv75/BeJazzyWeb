@@ -1,1 +1,1 @@
-.wordmark .logo{display:block;width:48px;height:48px;object-fit:cover;border-radius:50%}.admin-side .wordmark .logo{width:58px;height:58px}@media(max-width:800px){.wordmark .logo{width:42px;height:42px}.admin-side .wordmark .logo{width:52px;height:52px}}
+.wordmark .logo{display:block;width:190px;height:auto;object-fit:contain;border-radius:0;transform:translateY(6px) scaleY(.9)}.admin-side .wordmark .logo{width:170px}@media(max-width:800px){.wordmark .logo{width:150px;transform:translateY(4px) scaleY(.9)}.admin-side .wordmark .logo{width:130px}}
