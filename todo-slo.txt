@@ -1,0 +1,129 @@
+BEJAZZY TODO DOKUMENT
+
+CILJ
+
+- [ ] Iz prototipa izdelati zanesljivo, dvojezično in produkcijsko pripravljeno spletno stran BeJazzy.
+- [ ] Slovenščina je privzeti jezik, angleščina pa alternativni jezik.
+- [ ] Javne vsebine morajo biti preverljive, dostopne, hitro naložene in uporabne na mobilnih napravah.
+- [ ] Urejanje vsebine mora v produkciji potekati prek varnega, avtenticiranega CMS-a, ne prek localStorage.
+
+FAZA 1: VSEBINA IN MODEL
+
+- [ ] Zbrati in potrditi vse podatke o BeJazzy, dogodkih, lokacijah, stikih in družbenih omrežjih.
+- [ ] Vse nepreverjene podatke označiti kot PLACEHOLDER ali jih odstraniti pred objavo.
+- [ ] Določiti enoten model podatkov za strani, dogodke, medije, kontakte in prevode `sl`/`en`.
+- [ ] Dodati ločena slovenska in angleška polja za naslove, opise, CTA-je, alt besedila in SEO.
+- [ ] Dodati podatke dogodka: naslov, datum, ura, prizorišče, opis, vstopnica, status in vidnost.
+- [ ] Določiti model medijev: slika, video, vir, alt besedilo, napis, datum in pravice uporabe.
+- [ ] Dodati preverjanje obveznih polj, datumov, e-pošte in URL-jev.
+- [ ] LocalStorage urejevalnik dokumentirati kot prototip, ne kot produkcijski CMS.
+
+FAZA 2: NAVIGACIJA IN JAVNE POTI
+
+- [ ] Izvesti delujoč mobilni meni namesto trenutnega gumba brez vedenja.
+- [ ] Dodati odpiranje, zapiranje, fokus, `aria-expanded`, `aria-controls` in zapiranje s tipko Escape.
+- [ ] Preveriti vse poti med Domov, O nas, Dogodki, Mediji, Pridruži se, Kontakt in join-info.
+- [ ] Zagotoviti veljavne cilje za vse povezave v glavi, nogi in CTA-jih v obeh jezikih.
+- [ ] Dodati neposredno deljive poti ali stabilen hash-navigator za vse javne poglede.
+- [ ] Ustvariti dejansko vsebino za O nas/Zgodovina in Mediji, ne le dekorativnih sekcij.
+- [ ] Zagotoviti pravilno vedenje po osvežitvi strani, pri povečanem besedilu in na ozkih zaslonih.
+- [ ] Preveriti, da preklop jezika ohrani trenutno vsebinsko stran.
+
+FAZA 3: DOGODKI IN VSTOPNICE
+
+- [ ] Pri ustvarjanju in urejanju dogodka ohraniti URL vstopnice.
+- [ ] URL vstopnice prikazati v skrbniškem obrazcu in preverjati samo `http`/`https` povezave.
+- [ ] Namesto testnih vrednosti `#` prikazati jasno stanje brez vstopnice.
+- [ ] Prikazati lokalizirano prazno stanje, ko ni dogodkov.
+- [ ] Dogodke razvrstiti po datumu in ločiti prihodnje, pretekle ter preklicane dogodke.
+- [ ] Pri zunanjih povezavah uporabiti `target="_blank" rel="noopener noreferrer"`.
+- [ ] Zagotoviti kontekstualna dostopna imena za vsa dejanja dogodkov.
+- [ ] Preprečiti nevaren izpis urejenih vrednosti prek surovega `innerHTML`.
+
+FAZA 4: PRIDRUŽI SE, O NAS IN MEDIJI
+
+- [ ] Ohraniti `Avdicija-slo.png` in `Avdicija-eng.png` kot vizualna dodatka kampanje.
+- [ ] Bistvene informacije s plakatov ponovno zapisati kot iskalni in izbirljivi semantični HTML.
+- [ ] Dodati opisna alt besedila, kontaktni CTA, povratno navigacijo in jasno označene začasne podatke.
+- [ ] Zagotoviti enakovredno vsebino za slovensko in angleško različico avdicije.
+- [ ] Stran O nas zgraditi samo iz preverjenih podatkov o skupini, zgodovini in vrednotah.
+- [ ] Medijsko stran definirati pred izdelavo vmesnika: fotografije, YouTube, zvok ali tiskovna gradiva.
+- [ ] Dokler pravi mediji niso na voljo, prikazati iskreno prazno stanje namesto navidezne galerije.
+- [ ] Preveriti, da CTA-ji O nas, Pridruži se in Mediji vodijo na pravilne strani in dejanja.
+
+FAZA 5: VIZUALNA IN ODZIVNA KAKOVOST
+
+- [ ] Ohraniti kremno, črnilno, oranžno, rumeno in mint identiteto BeJazzy.
+- [ ] Avdicijska plakata vključiti kot premišljen poudarek kampanje, ne kot edini vir informacij.
+- [ ] Refaktorirati `styles.css`, `join-page.css` in `logo-overrides.css` v vzdržljive razdelke.
+- [ ] Uvesti skupne žetone za razmike, tipografijo in odzivne prekinitvene točke.
+- [ ] Zmanjšati škodljivo negativno razmikanje črk in preveriti berljivost dolgih prevodov.
+- [ ] Ohraniti eno jasno vizualno osrednjo točko, mirnejše podporne elemente in odstraniti brezpomenske dekoracije.
+- [ ] Preveriti glavo, meni, dogodke, plakate, HTML-besedilo, kontakt in nogo.
+- [ ] Preizkusiti širine 320, 375, 768, 1024 in 1440 px ter dolge naslove, prevode in manjkajoče slike.
+
+FAZA 6: DOSTOPNOST, SEO IN ZMOGLJIVOST
+
+- [ ] Dodati skip link, semantične orientacijske točke in pravilno hierarhijo naslovov.
+- [ ] Dodati vidne `:focus-visible` sloge in popolno navigacijo s tipkovnico.
+- [ ] Dekorativne elemente označiti z `aria-hidden`, povezavam pa dodati opisna imena.
+- [ ] Zagotoviti dostopne menije, obrazce, validacijska sporočila in napake.
+- [ ] Dodati dimenzije slik, alt besedila, lazy loading in odzivne stisnjene različice slik.
+- [ ] Dodati lokalizirane title, description, canonical, Open Graph, favicon, sitemap in robots.txt, ko je znan URL objave.
+- [ ] Optimizirati pisave, slike, CSS in JavaScript ter preveriti konzolo in osnovne metrike zmogljivosti.
+- [ ] Zagnati Lighthouse ali enakovredno preverjanje dostopnosti, kontrasta, SEO in zmogljivosti.
+
+FAZA 7: PRODUKCIJSKI CMS
+
+- [ ] LocalStorage CMS obravnavati samo kot prototip.
+- [ ] Izbrati backend ali headless CMS z avtentikacijo, vlogami in strežniškim shranjevanjem.
+- [ ] Dodati varno prijavo, odjavo, seje, dovoljenja, CSRF/XSS zaščito in rate limiting.
+- [ ] Ločiti podatke, i18n, izris, validacijo, shranjevanje in vezavo UI dogodkov.
+- [ ] Implementirati CRUD za dogodke, strani, medije, prevode in kontaktne nastavitve.
+- [ ] Dodati osnutke, predogled, objavo, umik objave, zgodovino in obnovitev sprememb.
+- [ ] Omogočiti varno nalaganje slik, obvezna alt besedila, omejitve velikosti in formatov.
+- [ ] Pred produkcijo odstraniti javni dostop do prototipnega admina ali ga zaščititi z avtentikacijo.
+
+RELEVANTNE DATOTEKE
+
+- [ ] `index.html` — lang, metapodatki, pisave, SEO, favicon in semantična struktura.
+- [ ] `app.js` — lokalizacija, modeli, navigacija, javne strani, CMS in varen izris.
+- [ ] `styles.css` — vizualni sistem, odzivnost, fokusna stanja in reduced motion.
+- [ ] `join-page.css` — odzivnost, dostopnost in vsebina strani Pridruži se.
+- [ ] `logo-overrides.css` — velikost in vedenje logotipa na različnih zaslonih.
+- [ ] `README.md` — navodila za zagon, vsebinski proces, objavo in produkcijske zahteve.
+- [ ] `.github/copilot-instructions.md` — pravila dvojezičnosti, preverjene vsebine in odzivnosti.
+- [ ] `Avdicija-slo.png`, `Avdicija-eng.png`, `logo-bejazzy.png` — alt besedila, optimizacija, licence in produkcijske različice.
+
+PREVERJANJE
+
+- [ ] Preveriti vse javne poti v slovenščini in angleščini.
+- [ ] Preveriti dogodke z nič, enim in več zapisi, urejanje, brisanje in ohranitev URL-ja vstopnice.
+- [ ] Preveriti mobilni meni, preklop jezika, CTA-je, vstopnice, družbena omrežja in mailto povezave.
+- [ ] Preveriti avdicijska plakata in enakovredno HTML vsebino v obeh jezikih.
+- [ ] Preveriti poškodovan localStorage, manjkajoče slike, neveljavne URL-je in dolga besedila.
+- [ ] Preveriti navigacijo samo s tipkovnico, fokus, Escape, screen reader imena, alt besedila in napake obrazcev.
+- [ ] Preveriti širine 320, 375, 768, 1024 in 1440 px na overflow, obrezovanje, prelamljanje in poravnavo noge.
+- [ ] Zagnati preverjanje sintakse, HTML validation, accessibility audit, Lighthouse in broken-link check.
+- [ ] Pred objavo potrditi avtentikacijo, dovoljenja, varnostne glave, varnostne kopije in obstojnost sprememb med napravami.
+
+ODLOČITVE
+
+- [ ] Slovenščina ostane privzeti jezik, angleščina pa popolna alternativa.
+- [ ] Nepreverjenih dejstev o skupini, dogodkih, stikih ali zgodovini se ne objavi kot resničnih.
+- [ ] Ohraniti toplo glasbeno identiteto in dekoracijo podrediti berljivosti ter dostopnosti.
+- [ ] LocalStorage admin ostane samo prototip.
+- [ ] Produkcija potrebuje ločen frontend in avtenticiran admin API.
+- [ ] Vstopnice ostanejo zunanje povezave; vgrajen nakup ni v obsegu.
+- [ ] Pravi mediji se objavijo šele po preverjanju dovoljenj in avtorstva.
+
+ODPRTA VPRAŠANJA
+
+- [ ] Kdo potrdi končna slovenska in angleška besedila?
+- [ ] Kateri datumi, prizorišča, časi in URL-ji vstopnic so uradni?
+- [ ] Kateri e-poštni naslov, telefon, naslov in družbeni profili so uradni?
+- [ ] Kateri backend, CMS, baza podatkov in hosting bodo uporabljeni v produkciji?
+- [ ] Katere vrste vsebin naj vsebuje stran Mediji?
+- [ ] Kdo ima dostop do CMS in katere uredniške vloge so potrebne?
+- [ ] Ali je potrebna kontaktna forma, newsletter ali integracija z e-poštnim servisom?
+- [ ] Kateri domena, canonical URL, analitika, piškotna politika in pravne strani so potrebni pred objavo?
