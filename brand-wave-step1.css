@@ -1,0 +1,32 @@
+:root {
+  --ink: #091f2d;
+  --cream: #f7f3ee;
+  --orange: #ff5a1f;
+  --yellow: #ffc14a;
+  --mint: #17b8ff;
+  --panel: #f2ece5;
+  --panel-alt: #eaf8ff;
+  --sky: #8fe9ff;
+  --line: rgba(9, 31, 45, 0.18);
+  --shared-wave: radial-gradient(circle at 15% 20%, rgba(255, 138, 61, 0.42), transparent 28%), radial-gradient(circle at 80% 25%, rgba(23, 184, 255, 0.28), transparent 30%), linear-gradient(135deg, #ff3a18 0%, #ff7f3f 16%, #ffb55c 30%, #ffe7a3 44%, #f7f3ee 58%, #d8f8ff 74%, #8fe9ff 88%, #17b8ff 100%);
+}
+
+.hero,
+.join-page {
+  background: var(--shared-wave);
+}
+
+.contact-footer {
+  background: var(--shared-wave);
+}
+
+.join-footer {
+  background: var(--shared-wave);
+}
+
+.contact-footer .contact,
+.contact-footer footer,
+.join-footer .join-page,
+.join-footer footer {
+  background: transparent;
+}

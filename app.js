@@ -27,6 +27,14 @@ function render() {
   document.documentElement.lang = state.lang;
   document.title = state.lang === 'sl' ? 'BeJazzy — Glas, ki nas povezuje' : 'BeJazzy — A voice that connects us';
   document.getElementById('app').innerHTML = state.admin ? adminTemplate() : state.view === 'join-info' ? joinInfoTemplate() : siteTemplate();
+  const contact = document.querySelector('.contact, .join-page');
+  const footer = document.querySelector('#app > footer');
+  if (contact && footer) {
+    const sharedFooter = document.createElement('div');
+    sharedFooter.className = contact.classList.contains('join-page') ? 'join-footer' : 'contact-footer';
+    contact.parentNode.insertBefore(sharedFooter, contact);
+    sharedFooter.append(contact, footer);
+  }
   bind();
   document.querySelectorAll('.admin-side .wordmark').forEach(wordmark => { wordmark.innerHTML = '<img class="logo" src="bejazzy-logo-new.png" alt="BeJazzy" />'; });
 }
