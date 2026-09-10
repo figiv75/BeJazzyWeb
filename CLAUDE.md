@@ -1,8 +1,27 @@
-# BeJazzy Project Instructions
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## Project
 
-BeJazzy is a lightweight bilingual website prototype for a Slovenian vocal group. It currently uses dependency-free HTML, CSS, and JavaScript with browser `localStorage` for the prototype admin flow.
+BeJazzy is a lightweight bilingual website prototype for a Slovenian vocal group. It is dependency-free HTML, CSS, and JavaScript with browser `localStorage` used for the prototype admin flow. There is no build step, package manager, bundler, linter, or test suite.
+
+## Commands
+
+- **Run**: open `index.html` directly in a browser, or serve the folder with any static file server (e.g. `npx serve .`). No install or build step is required.
+- **Lint/test**: none configured. After edits, verify via the manual checks in "Verification" below and check the browser console / editor diagnostics for syntax errors.
+
+## Architecture
+
+The whole app is a client-rendered single-page app driven by `app.js`, with no router library and no virtual DOM:
+
+- `state` (top of `app.js`) holds `lang` (`sl`/`en`, persisted to `localStorage` as `bejazz-lang`), `view` (drives which template renders), `admin` (bool, toggles the CMS view), and `events` (persisted to `localStorage` as `bejazz-events`, falling back to seeded demo data).
+- `copy` is a flat `{ sl: {...}, en: {...} }` dictionary of every UI string; `t(key)` looks up the active language. All new user-facing text must be added to both locales here — there is no separate localization file or framework.
+- `render()` is the single entry point that re-renders everything: it picks one of three template functions based on `state.admin`/`state.view`, sets `document.getElementById('app').innerHTML`, does a small DOM patch to merge the contact/join footer into a shared-background wrapper (see `.contact-footer`/`.join-footer` in `brand-wave-step1.css`), then calls `bind()`. There is no diffing — every state change re-renders the full subtree.
+- Three template functions build the markup as template-literal strings: `siteTemplate()` (public one-pager: hero, about, events, media, join, contact), `joinInfoTemplate()` (audition info page, swaps `Avdicija-slo.png`/`Avdicija-eng.png` by language), `adminTemplate()` (local CMS table for editing events).
+- `bind()` re-attaches all event listeners after every render using `data-*` attribute selectors (`data-view`, `data-lang`, `data-admin`, event row forms, delete buttons). Navigation is hash-based and simulated in JS (`state.view = el.dataset.view`) rather than using real routing; `#hash` links are used for anchor scrolling and are re-bound each render.
+- `persist()` writes `state.events` back to `localStorage`; there is no server, API, or authentication — the admin view is a local-only prototype CRUD over events.
+- CSS is layered via `<link>` order in `index.html`: `styles.css` (base visual system + all responsive breakpoints, single `@media(max-width:800px)` block) → `logo-overrides.css` (logo sizing) → `join-page.css` (audition page layout) → `brand-wave-step1.css` (redefines `:root` color variables and adds the shared gradient background used by hero/contact/join footer — this is a newer, in-progress rebrand layer; its `:root` values currently override `styles.css`'s `:root` values globally, not just for the intended sections).
 
 ## Content Rules
 
@@ -27,13 +46,14 @@ BeJazzy is a lightweight bilingual website prototype for a Slovenian vocal group
 ## Files
 
 - `app.js`: localized copy, state, rendering, navigation, join view, events, and prototype admin behavior.
-- `index.html`: document shell, metadata, fonts, and stylesheet loading.
-- `styles.css`: global visual system, responsive layout, navigation, events, contact, and footer.
+- `index.html`: document shell, metadata, fonts, and stylesheet loading order.
+- `styles.css`: global visual system, responsive layout, navigation, events, contact, footer, and admin CMS styles.
 - `join-page.css`: audition information page layout.
 - `logo-overrides.css`: logo sizing overrides.
+- `brand-wave-step1.css`: in-progress rebrand layer — shared gradient background and overridden color variables for hero/contact/join.
 - `Avdicija-slo.png` and `Avdicija-eng.png`: Slovenian and English audition artwork.
-- `logo-bejazzy.png`: current logo asset.
-- `todo.txt` and `todo-slo.txt`: implementation plans, not runtime configuration.
+- `bejazzy-logo-new.png`: current logo asset.
+- `todo.txt` and `todo-slo.txt`: implementation plans (Ukrainian), not runtime configuration.
 
 ## Verification
 
