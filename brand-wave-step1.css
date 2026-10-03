@@ -3,7 +3,9 @@
 }
 
 .hero,
-.join-page {
+.join-page,
+.events-page,
+.about-page {
   background: var(--shared-wave);
 }
 
@@ -18,6 +20,8 @@
 .contact-footer .contact,
 .contact-footer footer,
 .join-footer .join-page,
+.join-footer .events-page,
+.join-footer .about-page,
 .join-footer footer {
   background: transparent;
 }
@@ -25,6 +29,8 @@
 .hero .eyebrow,
 .join-page .eyebrow,
 .contact-footer .eyebrow,
+.events-page .eyebrow,
+.about-page .eyebrow,
 .hero .scroll-note {
   color: var(--ink);
 }

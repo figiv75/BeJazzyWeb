@@ -20,25 +20,19 @@ FAZA 1: VSEBINA IN MODEL
 
 FAZA 2: NAVIGACIJA IN JAVNE POTI
 
-- [ ] Izvesti delujoč mobilni meni namesto trenutnega gumba brez vedenja.
-- [ ] Dodati odpiranje, zapiranje, fokus, `aria-expanded`, `aria-controls` in zapiranje s tipko Escape.
 - [ ] Preveriti vse poti med Domov, O nas, Dogodki, Mediji, Pridruži se, Kontakt in join-info.
 - [ ] Zagotoviti veljavne cilje za vse povezave v glavi, nogi in CTA-jih v obeh jezikih.
 - [ ] Dodati neposredno deljive poti ali stabilen hash-navigator za vse javne poglede.
 - [ ] Ustvariti dejansko vsebino za O nas/Zgodovina in Mediji, ne le dekorativnih sekcij.
 - [ ] Zagotoviti pravilno vedenje po osvežitvi strani, pri povečanem besedilu in na ozkih zaslonih.
-- [ ] Preveriti, da preklop jezika ohrani trenutno vsebinsko stran.
 
 FAZA 3: DOGODKI IN VSTOPNICE
 
 - [ ] Pri ustvarjanju in urejanju dogodka ohraniti URL vstopnice.
 - [ ] URL vstopnice prikazati v skrbniškem obrazcu in preverjati samo `http`/`https` povezave.
 - [ ] Namesto testnih vrednosti `#` prikazati jasno stanje brez vstopnice.
-- [ ] Prikazati lokalizirano prazno stanje, ko ni dogodkov.
 - [ ] Dogodke razvrstiti po datumu in ločiti prihodnje, pretekle ter preklicane dogodke.
-- [ ] Pri zunanjih povezavah uporabiti `target="_blank" rel="noopener noreferrer"`.
 - [ ] Zagotoviti kontekstualna dostopna imena za vsa dejanja dogodkov.
-- [ ] Preprečiti nevaren izpis urejenih vrednosti prek surovega `innerHTML`.
 
 FAZA 4: PRIDRUŽI SE, O NAS IN MEDIJI
 
@@ -53,7 +47,6 @@ FAZA 4: PRIDRUŽI SE, O NAS IN MEDIJI
 
 FAZA 5: VIZUALNA IN ODZIVNA KAKOVOST
 
-- [ ] Ohraniti kremno, črnilno, oranžno, rumeno in mint identiteto BeJazzy.
 - [ ] Avdicijska plakata vključiti kot premišljen poudarek kampanje, ne kot edini vir informacij.
 - [ ] Refaktorirati `styles.css`, `join-page.css` in `logo-overrides.css` v vzdržljive razdelke.
 - [ ] Uvesti skupne žetone za razmike, tipografijo in odzivne prekinitvene točke.
