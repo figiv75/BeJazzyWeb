@@ -11,6 +11,7 @@ const state = {
   view: 'home',
   admin: false,
   navOpen: false,
+  aboutSection: 'band',
   events: loadEvents() || [
     { date: '12. 12. 2026', title: 'Prižig BeJazzy', place: 'Ljubljana · Antonov dom', time: '19:30', ticket: '#', past: false, freeEntry: false },
     { date: '21. 12. 2026', title: 'Advent v Ljubljani', place: 'Ljubljana · ', time: '20:00', ticket: '#', past: false, freeEntry: true },
@@ -35,10 +36,12 @@ const copy = {
 };
 
 copy.sl.aboutPage = {
+  subsections: [
+  { id: 'band', navTitle: 'Vokalna skupina BeJazzy',
   title: 'BeJazzy – zgodba, ki jo pišejo glasovi',
   lead: 'Nekatere skupine nastanejo po načrtu. BeJazzy je nastal iz srečanja ljudi, spominov in ljubezni do petja.',
   sections: [
-    { body: `<p>Zgodba vokalne skupine BeJazzy se je začela leta 2013, ko je velika skupina nekdanjih pevk in pevcev prejela povabilo, da nastopi ob praznovanju 30-letnice Komornega zbora Gaudeamus, kasneje znanega kot Perpetuum Jazzile, na velikem odru ljubljanskih Stožic. Priprave na ta nastop so ponovno povezale ljudi, ki so nekoč skupaj peli, in obudile ljubezen do vokalnega jazzovskega petja.</p><p>Po prvem srečanju pa se zgodba ni končala. Prav nasprotno. Maja 2014 so se začele poskusne vaje, na katerih so nekdanji pevski prijatelji ponovno začeli prepevati skupaj. Sprva pod imenom Perpetuum Gaudeamus, skupina pa je kmalu dobila svojo novo identiteto. Dne 23. decembra 2014 je bilo ustanovljeno Kulturno društvo BeJazzy in tako je nova vokalna zasedba tudi uradno vstopila v ljubljansko kulturno življenje. (<a href="https://zkdl.si/index.php?Itemid=75&catid=54%3Ameani-pevski-zbori&id=1294%3Avokalna-skupina-bejazzy&option=com_content&view=article" target="_blank" rel="noopener noreferrer">zkdl.si</a>)</p>` },
+    { body: `<p>Zgodba vokalne skupine BeJazzy se je začela leta 2013, ko je velika skupina nekdanjih pevk in pevcev prejela povabilo, da nastopi ob praznovanju 30-letnice Komornega zbora Gaudeamus, kasneje znanega kot Perpetuum Jazzile, na velikem odru ljubljanskih Stožic. Priprave na ta nastop so ponovno povezale ljudi, ki so nekoč skupaj peli, in obudile ljubezen do vokalnega jazzovskega petja.</p><p>Po prvem srečanju pa se zgodba ni končala. Prav nasprotno. Maja 2014 so se začele poskusne vaje, na katerih so nekdanji pevski prijatelji ponovno začeli prepevati skupaj. Sprva pod imenom Perpetuum Gaudeamus, skupina pa je kmalu dobila svojo novo identiteto. Dne 23. decembra 2014 je bilo ustanovljeno Kulturno društvo BeJazzy in tako je nova vokalna zasedba tudi uradno vstopila v ljubljansko kulturno življenje.</p>` },
     { heading: 'Od spominov do lastnega zvoka', body: `<p>Na začetku je bil v ospredju repertoar, ki so ga pevci poznali iz prejšnjih pevskih let. A BeJazzy ni želel ostati le pri obujanju spominov. Repertoar se je postopoma širil, skupina pa je iz intimne zasedbe zrasla v močan, ritmičen vokalni kolektiv, ki je skozi leta štel okoli trideset pevcev.</p><p>Od samega začetka skupino umetniško vodi Ksenja Pirc, ki je v BeJazzy prinesla svoje izkušnje pevke in korepetitorke iz Perpetuum Jazzile ter pedagoško znanje. Njena posebna pozornost do harmonije, ritma, zvočnih podrobnosti in odrske izraznosti je pomembno oblikovala prepoznaven zvok skupine.</p><p>BeJazzy je zrasel okoli ideje, da je mogoče glas uporabiti kot celoten glasbeni instrument. Temelj skupine je a cappella petje – brez instrumentalne spremljave –, pri katerem pomembno vlogo igrajo večglasje, swingovska pulzacija, jazzovske harmonije in ritmična vokalna energija. Poseben izziv predstavljajo tudi skladbe, ki so bile prvotno napisane za instrumente, nato pa so jih prilagodili tako, da jih lahko v celoti ustvarijo glasovi pevcev.</p>` },
     { heading: 'Jazz, popevka, evergreeni in veliko radovednosti', body: `<p>Jedro repertoarja BeJazzy predstavljajo jazzovski standardi, slovenske popevke, tuje zimzelene melodije in sodobne vokalne priredbe. Skupina rada poseže tudi po ljudskih pesmih in jih predstavi v sodobni vokalni preobleki. Njihov program tako potuje od starih mojstrov jazza do slovenskih popevk in pesmi različnih dežel.</p><p>Že zgodaj so v svoj glasbeni svet vključevali tudi beatbox in vokalni ritem. Na koncertih pa niso želeli ostati omejeni zgolj na pevski svet – skozi leta so z njimi nastopali plesalci tanga, stepa in swinga, različni instrumentalisti, vokalisti ter drugi glasbeni gostje.</p>` },
     { heading: 'Prvi koncerti in prvi pomembni nastopi', body: `<p>Leta 2016 je BeJazzy izvedel svoj prvi koncert v Rdeči dvorani na ljubljanskem Magistratu. Istega leta se je skupina predstavila tudi na Sozvočenjih s programom <em>Noč nad Ljubljanico</em>, katerega koncept je pripravila Ksenja Pirc. Za tematsko zasnovo je prejela posebno priznanje. Program je Ljubljanico, ljubljanske mostove, zvezdnato nebo in mestno okolje povezal v glasbeno zgodbo.</p><p>BeJazzy je kmalu začel nastopati tudi zunaj Ljubljane. Leta 2018 je v ljubljanski stolnici pripravil skupni koncert z ameriškim zborom Con Brio, ki je koncert navedel v svojem arhivu med skupnimi nastopi v Sloveniji.</p><p>Leta 2019 je skupina v Mestnem muzeju Ljubljana pripravila koncert, ki je poslušalce popeljal od zlate dobe slovenske popevke prek jazzovskih evergreenov do latino ritmov. Na odru so se jim pridružili tudi beatboxer Sašo Vrabič in vokalni gostje.</p>` },
@@ -50,8 +53,23 @@ copy.sl.aboutPage = {
   todayBody: '<p>BeJazzy ostaja vokalna skupina iz Ljubljane, ki jo povezuje ljubezen do a cappella petja, jazza, ritma in skupnega ustvarjanja. Njihova zgodba se je začela kot ponovno srečanje starih pevskih prijateljev, skozi leta pa je zrasla v svojo lastno glasbeno zgodbo.</p>',
   closing: 'BeJazzy ni nastal zato, da bi bil popoln. Nastal je zato, da bi peli. Skupaj.',
   final: 'In prav v tem je njegov glas.'
+  },
+  { id: 'leader', navTitle: 'Umetniška vodja',
+  title: 'Ksenja Pirc',
+  lead: 'Glas, ki povezuje glasove',
+  sections: [
+    { body: `<p>Vsaka glasbena skupina ima svoj zvok. BeJazzy pa ima tudi svojega človeka, ki zna številne posamezne glasove povezati v eno zgodbo. To je <strong>Ksenja Pirc</strong> – glasbenica, pianistka, pedagoginja, pevka, aranžerka in predvsem umetniška vodja, ki že od samega začetka oblikuje glasbeni značaj skupine BeJazzy.</p><p>Njena glasbena pot je tesno povezana z vokalnim petjem. Kot <strong>altistka in korepetitorka v zasedbi Gaudeamus</strong>, pozneje znani kot Perpetuum Jazzile, je spoznala moč velikega vokalnega ansambla in svet jazza, ustvarjenega brez klasičnih instrumentov. Prav ta izkušnja je postala pomemben del njenega kasnejšega ustvarjalnega dela.</p><p>Leta 2013 je ob pripravah na veliki koncert v ljubljanskih Stožicah ponovno stopila skupaj s skupino nekdanjih pevskih prijateljev. Stari spomini so oživeli, skupaj z njimi pa tudi želja po novem skupnem glasbenem poglavju.</p><p><strong>Maja 2014 so se začele prve vaje.</strong></p><p>Sprva nihče ni mogel vedeti, kam bo to srečanje pripeljalo. Iz nekaj glasov pa je postopoma nastala skupina, ki je dobila svoje ime, svojo energijo in svoj značaj. Ksenja je prevzela njeno umetniško vodstvo in začela oblikovati BeJazzy kot prostor, kjer lahko glas postane melodija, harmonija, ritem in izraz.</p><p>Njena vizija je preprosta, vendar zahtevna: <strong>iz posameznih glasov ustvariti en skupen instrument</strong>.</p><p>Pri tem Ksenja ne razmišlja samo o pravilnih tonih. Pomembni so ji občutek, ritem, barva zvoka, medsebojno poslušanje in trenutek, ko skupina začne dihati kot eno. Jazzovski groove, a cappella harmonije, vokalni ritmi in igrivost postajajo pod njenim vodstvom del prepoznavnega zvoka BeJazzyja.</p><p>Ksenja je tudi <strong>pedagoginja in učiteljica klavirja</strong>, zato svoje znanje že vrsto let prenaša na nove generacije glasbenikov. Toda njeno delo ni le poučevanje. Je spodbujanje radovednosti, poslušanja in poguma, da glasbenik poišče svoj lasten glas.</p><p>V BeJazzyju se ta pogled nadaljuje skozi vsakega pevca.</p><p>Skupina povezuje ljudi različnih generacij, različne glasbene izkušnje in različne osebnosti. Ksenjina naloga je, da iz vsega tega ustvari nekaj skupnega – trenutek, ko se posamezni glasovi zlijejo v eno glasbo.</p><p>Morda je prav zato njena najpomembnejša vloga tista, ki je ni mogoče zapisati v noben življenjepis.</p><p><strong>Ksenja Pirc ne vodi samo BeJazzyja.<br/>Pomaga mu poslušati samega sebe.</strong></p><p>In ko se na odru združijo številni glasovi, je v tem zvoku vedno tudi del njene glasbene zgodbe.</p>` }
+  ]
+  },
+  { id: 'org', navTitle: 'Kulturno društvo BeJazzy',
+  title: 'Kulturno društvo BeJazzy',
+  lead: 'Vsebina v pripravi.'
+  }
+  ]
 };
 copy.en.aboutPage = {
+  subsections: [
+  { id: 'band', navTitle: 'BeJazzy Vocal Group',
   title: 'BeJazzy – A Story Written by Voices',
   lead: 'Some groups are created according to a plan. BeJazzy was born from a meeting of people, memories, and a love of singing.',
   sections: [
@@ -67,6 +85,19 @@ copy.en.aboutPage = {
   todayBody: '<p>BeJazzy remains a vocal group from Ljubljana united by a love of a cappella singing, jazz, rhythm, and creating music together. Its story began as a reunion of old singing friends, but over the years it has grown into a musical story of its own.</p>',
   closing: 'BeJazzy was not created because everything had to be perfect. It was created because people wanted to sing. Together.',
   final: 'And that is where its voice lies.'
+  },
+  { id: 'leader', navTitle: 'Artistic Director',
+  title: 'Ksenja Pirc',
+  lead: 'The Voice That Connects Voices',
+  sections: [
+    { body: `<p>Every musical group has its own sound. But BeJazzy also has a person who knows how to bring many individual voices together into one story. That person is <strong>Ksenja Pirc</strong> — musician, pianist, teacher, singer, arranger, and above all, the artistic director who has shaped the musical character of BeJazzy from the very beginning.</p><p>Her musical journey is closely connected with vocal music. As an <strong>alto singer and accompanist in the ensemble Gaudeamus</strong>, later known as Perpetuum Jazzile, she discovered the power of a large vocal ensemble and the world of jazz created without traditional instruments. That experience became an important part of her later creative work.</p><p>In 2013, while preparing for a major concert at Ljubljana's Stožice Arena, she reunited with a group of former singing friends. Old memories came back to life, together with the desire to begin a new musical chapter.</p><p><strong>In May 2014, the first rehearsals began.</strong></p><p>At first, no one could know where this reunion would lead. But from a few voices, a group gradually emerged — with its own name, its own energy, and its own character. Ksenja took on its artistic leadership and began shaping BeJazzy as a place where the human voice could become melody, harmony, rhythm, and expression.</p><p>Her vision is simple, yet demanding: <strong>to turn individual voices into one shared instrument</strong>.</p><p>For Ksenja, it is not only about singing the right notes. What matters is feeling, rhythm, tone colour, listening to one another, and that special moment when the whole group begins to breathe as one. Under her direction, jazz groove, a cappella harmonies, vocal rhythms, and playfulness have become part of BeJazzy's distinctive sound.</p><p>Ksenja is also a <strong>teacher and piano educator</strong>, and for many years she has passed her knowledge on to new generations of musicians. Yet her work goes beyond teaching. It is about encouraging curiosity, attentive listening, and the courage to find one's own musical voice.</p><p>In BeJazzy, that philosophy continues through every singer.</p><p>The group brings together people of different generations, different musical experiences, and different personalities. Ksenja's role is to transform all of this into something shared — that moment when individual voices merge into one piece of music.</p><p>Perhaps that is why her most important role is the one that cannot be written into any biography.</p><p><strong>Ksenja Pirc does not simply lead BeJazzy.<br/>She helps BeJazzy listen to itself.</strong></p><p>And whenever many voices come together on stage, her musical story is always part of that sound.</p>` }
+  ]
+  },
+  { id: 'org', navTitle: 'BeJazzy Cultural Association',
+  title: 'BeJazzy Cultural Association',
+  lead: 'Content coming soon.'
+  }
+  ]
 };
 function t(key) { return copy[state.lang][key]; }
 function escapeHtml(value) { return String(value).replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char])); }
@@ -115,9 +146,12 @@ function allEventsTemplate() {
 }
 
 function aboutPageTemplate() {
-  const about = t('aboutPage');
+  const subsections = t('aboutPage').subsections;
+  const active = subsections.find(s => s.id === state.aboutSection) || subsections[0];
+  const subnav = subsections.map(s => `<button class="about-tab${s.id === active.id ? ' active' : ''}" data-about-section="${s.id}">${s.navTitle}</button>`).join('');
+  const body = `${active.lead ? `<p class="about-lead">${active.lead}</p>` : ''}${(active.sections || []).map(s => `<section class="about-block">${s.heading ? `<h2>${s.heading}</h2>` : ''}${s.body}</section>`).join('')}${active.todayHeading ? `<section class="about-block"><h3>${active.todayHeading}</h3>${active.todayBody}</section>` : ''}${active.closing ? `<p class="about-closing">${active.closing}</p>` : ''}${active.final ? `<p class="about-final">${active.final}</p>` : ''}`;
   return `${headerHtml()}
-  <main class="about-page"><div class="section-heading"><div><p class="eyebrow">${t('aboutKicker')}</p><h1>${about.title}</h1></div><a class="text-link" href="#home" data-view="home">${t('joinPageBack')} <span>↗</span></a></div><p class="about-lead">${about.lead}</p>${about.sections.map(s => `<section class="about-block">${s.heading ? `<h2>${s.heading}</h2>` : ''}${s.body}</section>`).join('')}<section class="about-block"><h3>${about.todayHeading}</h3>${about.todayBody}</section><p class="about-closing">${about.closing}</p><p class="about-final">${about.final}</p></main>
+  <main class="about-page"><div class="section-heading"><div><p class="eyebrow">${t('aboutKicker')}</p><h1>${active.title}</h1></div><a class="text-link" href="#home" data-view="home">${t('joinPageBack')} <span>↗</span></a></div><nav class="about-subnav">${subnav}</nav>${body}</main>
   ${footerHtml()}`;
 }
 
@@ -131,7 +165,8 @@ function adminTemplate() {
 }
 
 function bind() {
-  document.querySelectorAll('[data-view]').forEach(el => el.addEventListener('click', e => { e.preventDefault(); state.view = el.dataset.view; state.admin = false; state.navOpen = false; render(); setTimeout(() => document.getElementById(state.view)?.scrollIntoView({ behavior: 'smooth' }), 10); }));
+  document.querySelectorAll('[data-view]').forEach(el => el.addEventListener('click', e => { e.preventDefault(); state.view = el.dataset.view; state.admin = false; state.navOpen = false; if (state.view === 'about-page') state.aboutSection = 'band'; render(); setTimeout(() => { const target = document.getElementById(state.view); if (target) { target.scrollIntoView({ behavior: 'smooth' }); } else { window.scrollTo({ top: 0, behavior: 'smooth' }); } }, 10); }));
+  document.querySelectorAll('[data-about-section]').forEach(el => el.addEventListener('click', () => { state.aboutSection = el.dataset.aboutSection; render(); window.scrollTo({ top: 0, behavior: 'smooth' }); }));
   document.querySelector('.menu')?.addEventListener('click', () => { state.navOpen = !state.navOpen; render(); });
   document.querySelectorAll('[data-lang]').forEach(el => el.addEventListener('click', () => { state.lang = el.dataset.lang; localStorage.setItem('bejazz-lang', state.lang); render(); }));
   document.querySelectorAll('[data-admin]').forEach(el => el.addEventListener('click', () => { state.admin = !state.admin; render(); }));

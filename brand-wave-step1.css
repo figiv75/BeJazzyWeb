@@ -40,3 +40,8 @@
 .contact-footer .eyebrow .line {
   background: var(--ink);
 }
+
+.about-page .about-tab.active {
+  color: var(--ink);
+  border-bottom-color: var(--ink);
+}
