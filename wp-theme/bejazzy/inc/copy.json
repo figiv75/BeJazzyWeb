@@ -1,0 +1,256 @@
+{
+  "sl": {
+    "nav": [
+      "O nas",
+      "Koncerti",
+      "Mediji",
+      "Pridruži se",
+      "Kontakt"
+    ],
+    "location": "LJUBLJANA · SLOVENIJA",
+    "scroll": "POMIKNI ZA RAZISKOVANJE",
+    "galleryOne": "GLAS<br>V GIBANJU",
+    "galleryTwo": "EN<br>RITEM",
+    "galleryThree": "GLASNO<br>SKUPAJ",
+    "country": "SLOVENIJA",
+    "heroKicker": "Slovenska vokalna skupina",
+    "heroTitle": "Glas, ki nas povezuje.",
+    "heroText": "BeJazzy je skupnost različnih glasov, enega ritma in neskončne radovednosti. Srečamo se na odru, da skupaj ustvarimo nekaj, česar sam glas ne zmore.",
+    "heroCta": "Razišči koncerte",
+    "secondary": "Spoznaj BeJazzy",
+    "next": "Naslednji nastop",
+    "aboutKicker": "Več kot zbor",
+    "aboutTitle": "Ko se glasovi srečajo, nastane energija.",
+    "aboutText": "Ne iščemo popolnosti v enakosti. Iščemo trenutek, ko se različni glasovi slišijo kot eden — živ, igriv in popolnoma naš.",
+    "aboutCta": "Naša zgodba",
+    "eventsKicker": "V živo",
+    "eventsTitle": "Slišimo se kmalu.",
+    "allEvents": "Vsi koncerti",
+    "ticket": "Vstopnice",
+    "pastEvents": "Pretekli koncerti",
+    "pastLabel": "Pretekel",
+    "freeEntry": "Vstop prost",
+    "mediaKicker": "Ujemi trenutek",
+    "mediaTitle": "BeJazzy skozi objektiv.",
+    "mediaCta": "Odpri medijsko galerijo",
+    "joinKicker": "Tvoj glas šteje",
+    "joinTitle": "Morda nam manjka prav tvoj glas.",
+    "joinText": "Pojdi z nami na vaje, spoznaj ekipo in začuti, ali je BeJazzy prostor zate.",
+    "joinCta": "Kako se pridružim?",
+    "joinPageKicker": "Pridruži se nam",
+    "joinPageTitle": "Pridi na avdicijo.",
+    "joinPageText": "Iščeš prostor, kjer lahko tvoj glas zveni skupaj z drugimi? Oglej si informacije za avdicijo in nam piši za naslednji korak.",
+    "joinPageBack": "Nazaj na stran",
+    "joinPageContact": "Piši nam",
+    "contact": "Kontakt",
+    "footer": "Glasba je skupni jezik. BeJazzy je naš način, da ga govorimo skupaj.",
+    "funders": "Sofinancira",
+    "admin": "Uredi vsebino",
+    "close": "Zapri admin",
+    "save": "Shrani dogodek",
+    "newEvent": "Nov dogodek",
+    "adminTitle": "Vsebinski studio",
+    "adminSub": "Preprost prostor za urejanje koncertov.",
+    "date": "Datum",
+    "eventName": "Ime dogodka",
+    "place": "Lokacija",
+    "time": "Ura",
+    "empty": "Ni dogodkov.",
+    "aboutPage": {
+      "subsections": [
+        {
+          "id": "band",
+          "navTitle": "Vokalna skupina BeJazzy",
+          "title": "BeJazzy – zgodba, ki jo pišejo glasovi",
+          "image": "images/bejazzy-group-photo.png",
+          "imageAlt": "Člani in članice vokalne skupine BeJazzy",
+          "lead": "Nekatere skupine nastanejo po načrtu. BeJazzy je nastal iz srečanja ljudi, spominov in ljubezni do petja.",
+          "sections": [
+            {
+              "body": "<p>Zgodba vokalne skupine BeJazzy se je začela leta 2013, ko je velika skupina nekdanjih pevk in pevcev prejela povabilo, da nastopi ob praznovanju 30-letnice Komornega zbora Gaudeamus, kasneje znanega kot Perpetuum Jazzile, na velikem odru ljubljanskih Stožic. Priprave na ta nastop so ponovno povezale ljudi, ki so nekoč skupaj peli, in obudile ljubezen do vokalnega jazzovskega petja.</p><p>Po prvem srečanju pa se zgodba ni končala. Prav nasprotno. Maja 2014 so se začele poskusne vaje, na katerih so nekdanji pevski prijatelji ponovno začeli prepevati skupaj. Sprva pod imenom Perpetuum Gaudeamus, skupina pa je kmalu dobila svojo novo identiteto. Dne 23. decembra 2014 je bilo ustanovljeno Kulturno društvo BeJazzy in tako je nova vokalna zasedba tudi uradno vstopila v ljubljansko kulturno življenje.</p>"
+            },
+            {
+              "heading": "Od spominov do lastnega zvoka",
+              "body": "<p>Na začetku je bil v ospredju repertoar, ki so ga pevci poznali iz prejšnjih pevskih let. A BeJazzy ni želel ostati le pri obujanju spominov. Repertoar se je postopoma širil, skupina pa je iz intimne zasedbe zrasla v močan, ritmičen vokalni kolektiv, ki je skozi leta štel okoli trideset pevcev.</p><p>Od samega začetka skupino umetniško vodi Ksenja Pirc, ki je v BeJazzy prinesla svoje izkušnje pevke in korepetitorke iz Perpetuum Jazzile ter pedagoško znanje. Njena posebna pozornost do harmonije, ritma, zvočnih podrobnosti in odrske izraznosti je pomembno oblikovala prepoznaven zvok skupine.</p><p>BeJazzy je zrasel okoli ideje, da je mogoče glas uporabiti kot celoten glasbeni instrument. Temelj skupine je a cappella petje – brez instrumentalne spremljave –, pri katerem pomembno vlogo igrajo večglasje, swingovska pulzacija, jazzovske harmonije in ritmična vokalna energija. Poseben izziv predstavljajo tudi skladbe, ki so bile prvotno napisane za instrumente, nato pa so jih prilagodili tako, da jih lahko v celoti ustvarijo glasovi pevcev.</p>"
+            },
+            {
+              "heading": "Jazz, popevka, evergreeni in veliko radovednosti",
+              "body": "<p>Jedro repertoarja BeJazzy predstavljajo jazzovski standardi, slovenske popevke, tuje zimzelene melodije in sodobne vokalne priredbe. Skupina rada poseže tudi po ljudskih pesmih in jih predstavi v sodobni vokalni preobleki. Njihov program tako potuje od starih mojstrov jazza do slovenskih popevk in pesmi različnih dežel.</p><p>Že zgodaj so v svoj glasbeni svet vključevali tudi beatbox in vokalni ritem. Na koncertih pa niso želeli ostati omejeni zgolj na pevski svet – skozi leta so z njimi nastopali plesalci tanga, stepa in swinga, različni instrumentalisti, vokalisti ter drugi glasbeni gostje.</p>"
+            },
+            {
+              "heading": "Prvi koncerti in prvi pomembni nastopi",
+              "body": "<p>Leta 2016 je BeJazzy izvedel svoj prvi koncert v Rdeči dvorani na ljubljanskem Magistratu. Istega leta se je skupina predstavila tudi na Sozvočenjih s programom <em>Noč nad Ljubljanico</em>, katerega koncept je pripravila Ksenja Pirc. Za tematsko zasnovo je prejela posebno priznanje. Program je Ljubljanico, ljubljanske mostove, zvezdnato nebo in mestno okolje povezal v glasbeno zgodbo.</p><p>BeJazzy je kmalu začel nastopati tudi zunaj Ljubljane. Leta 2018 je v ljubljanski stolnici pripravil skupni koncert z ameriškim zborom Con Brio, ki je koncert navedel v svojem arhivu med skupnimi nastopi v Sloveniji.</p><p>Leta 2019 je skupina v Mestnem muzeju Ljubljana pripravila koncert, ki je poslušalce popeljal od zlate dobe slovenske popevke prek jazzovskih evergreenov do latino ritmov. Na odru so se jim pridružili tudi beatboxer Sašo Vrabič in vokalni gostje.</p>"
+            },
+            {
+              "heading": "Glasba, ki potuje",
+              "body": "<p>BeJazzy se je skozi leta predstavil na številnih kulturnih dogodkih in zborovskih srečanjih. Nastopal je po Sloveniji ter na festivalih in srečanjih v Zrenjaninu v Srbiji, Trstu v Italiji in Šmihelu v Avstriji. Redno se vključuje tudi v ljubljanske zborovske prireditve, Sozvočenja, Praznik petja in koncertni cikel Plečnik in a-cappella.</p><p>Poseben poudarek je skupina dobila leta 2024, ko je nastopila v ciklu Plečnik in a-cappella. Na koncertu je predstavila značilen repertoar, ki združuje ljudske pesmi, slovenske popevke, pesmi tujih dežel in jazzovske standarde, skupaj z vokalnimi izvedbami skladb, ki so bile prvotno instrumentalne.</p>"
+            },
+            {
+              "heading": "BeJazzy ni samo oder",
+              "body": "<p>Čeprav je glasba v središču njihovega delovanja, BeJazzy razume petje tudi kot način povezovanja ljudi.</p><p>Skupina združuje pevce različnih generacij. Mladostna energija mlajših in izkušnje starejših se na vajah in odru dopolnjujejo ter ustvarjajo okolje, v katerem ima vsak svoj glas in svoje mesto. Poleg koncertov skupino povezujejo tudi druženja, intenzivne pevske vaje in skupni trenutki zunaj odra.</p><p>S svojo glasbo radi obiščejo tudi ljudi, ki sami težje pridejo na koncert. Nastopali so v domovih starejših, bolnišnicah in na dobrodelnih prireditvah, poseben prostor pa namenjajo tudi mladim glasbenikom, ki jih vključujejo v svoje koncertne projekte.</p>"
+            },
+            {
+              "heading": "Deset let – in še več",
+              "body": "<p>Pomemben mejnik je prišel leta 2024, ko je BeJazzy praznoval desetletje svojega delovanja. Jubilejni projekt MISIJA MOGOČE so novembra predstavili v veliki dvorani Konservatorija za glasbo in balet Ljubljana, zaradi velikega zanimanja pa so koncert ponovili marca 2025. Prvi del je temeljil na njihovem značilnem a cappella zvoku, v drugem delu pa so glasbeno sliko razširili s sodelovanjem jazz tria – bobnov, klaviatur in kontrabasa – ter drugih gostov.</p><p>Jubilej je tako postal pogled nazaj na prehojeno pot, hkrati pa tudi pogled naprej. BeJazzy še naprej raziskuje nove možnosti vokalnega izraza, povezuje različne generacije glasbenikov in na svoje koncerte vabi goste iz različnih umetniških okolij.</p>"
+            }
+          ],
+          "todayHeading": "In danes?",
+          "todayBody": "<p>BeJazzy ostaja vokalna skupina iz Ljubljane, ki jo povezuje ljubezen do a cappella petja, jazza, ritma in skupnega ustvarjanja. Njihova zgodba se je začela kot ponovno srečanje starih pevskih prijateljev, skozi leta pa je zrasla v svojo lastno glasbeno zgodbo.</p>",
+          "closing": "BeJazzy ni nastal zato, da bi bil popoln. Nastal je zato, da bi peli. Skupaj.",
+          "final": "In prav v tem je njegov glas."
+        },
+        {
+          "id": "leader",
+          "navTitle": "Umetniška vodja",
+          "title": "Ksenja Pirc",
+          "image": "images/leader-placeholder.png",
+          "imageAlt": "Začasna slika (bo nadomeščena)",
+          "lead": "Glas, ki povezuje glasove",
+          "sections": [
+            {
+              "body": "<p>Vsaka glasbena skupina ima svoj zvok. BeJazzy pa ima tudi svojega človeka, ki zna številne posamezne glasove povezati v eno zgodbo. To je <strong>Ksenja Pirc</strong> – glasbenica, pianistka, pedagoginja, pevka, aranžerka in predvsem umetniška vodja, ki že od samega začetka oblikuje glasbeni značaj skupine BeJazzy.</p><p>Njena glasbena pot je tesno povezana z vokalnim petjem. Kot <strong>altistka in korepetitorka v zasedbi Gaudeamus</strong>, pozneje znani kot Perpetuum Jazzile, je spoznala moč velikega vokalnega ansambla in svet jazza, ustvarjenega brez klasičnih instrumentov. Prav ta izkušnja je postala pomemben del njenega kasnejšega ustvarjalnega dela.</p><p>Leta 2013 je ob pripravah na veliki koncert v ljubljanskih Stožicah ponovno stopila skupaj s skupino nekdanjih pevskih prijateljev. Stari spomini so oživeli, skupaj z njimi pa tudi želja po novem skupnem glasbenem poglavju.</p><p><strong>Maja 2014 so se začele prve vaje.</strong></p><p>Sprva nihče ni mogel vedeti, kam bo to srečanje pripeljalo. Iz nekaj glasov pa je postopoma nastala skupina, ki je dobila svoje ime, svojo energijo in svoj značaj. Ksenja je prevzela njeno umetniško vodstvo in začela oblikovati BeJazzy kot prostor, kjer lahko glas postane melodija, harmonija, ritem in izraz.</p><p>Njena vizija je preprosta, vendar zahtevna: <strong>iz posameznih glasov ustvariti en skupen instrument</strong>.</p><p>Pri tem Ksenja ne razmišlja samo o pravilnih tonih. Pomembni so ji občutek, ritem, barva zvoka, medsebojno poslušanje in trenutek, ko skupina začne dihati kot eno. Jazzovski groove, a cappella harmonije, vokalni ritmi in igrivost postajajo pod njenim vodstvom del prepoznavnega zvoka BeJazzyja.</p><p>Ksenja je tudi <strong>pedagoginja in učiteljica klavirja</strong>, zato svoje znanje že vrsto let prenaša na nove generacije glasbenikov. Toda njeno delo ni le poučevanje. Je spodbujanje radovednosti, poslušanja in poguma, da glasbenik poišče svoj lasten glas.</p><p>V BeJazzyju se ta pogled nadaljuje skozi vsakega pevca.</p><p>Skupina povezuje ljudi različnih generacij, različne glasbene izkušnje in različne osebnosti. Ksenjina naloga je, da iz vsega tega ustvari nekaj skupnega – trenutek, ko se posamezni glasovi zlijejo v eno glasbo.</p><p>Morda je prav zato njena najpomembnejša vloga tista, ki je ni mogoče zapisati v noben življenjepis.</p><p><strong>Ksenja Pirc ne vodi samo BeJazzyja.<br/>Pomaga mu poslušati samega sebe.</strong></p><p>In ko se na odru združijo številni glasovi, je v tem zvoku vedno tudi del njene glasbene zgodbe.</p>"
+            }
+          ]
+        },
+        {
+          "id": "org",
+          "navTitle": "Kulturno društvo BeJazzy",
+          "title": "Kulturno društvo BeJazzy",
+          "sections": [
+            {
+              "body": "<p class=\"org-seat\"><span class=\"org-seat-label\">Sedež društva</span><br>Kulturno društvo BeJazzy<br>Tacenska cesta 125e<br>SI-1000 Ljubljana</p>"
+            }
+          ],
+          "final": "Več vsebine o društvu je v pripravi."
+        }
+      ]
+    }
+  },
+  "en": {
+    "nav": [
+      "About",
+      "Concerts",
+      "Media",
+      "Join us",
+      "Contact"
+    ],
+    "location": "LJUBLJANA · SLOVENIA",
+    "scroll": "SCROLL TO EXPLORE",
+    "galleryOne": "VOICE<br>IN MOTION",
+    "galleryTwo": "ONE<br>RHYTHM",
+    "galleryThree": "LOUD<br>TOGETHER",
+    "country": "SLOVENIA",
+    "ticket": "Tickets",
+    "heroKicker": "Slovenian vocal group",
+    "heroTitle": "A voice that connects us.",
+    "heroText": "BeJazzy is a community of different voices, one pulse and endless curiosity. We meet on stage to create something no single voice could make alone.",
+    "heroCta": "Explore concerts",
+    "secondary": "Meet BeJazzy",
+    "next": "Next performance",
+    "aboutKicker": "More than a choir",
+    "aboutTitle": "When voices meet, energy happens.",
+    "aboutText": "We are not looking for perfection in sameness. We are looking for the moment different voices sound like one — alive, playful and completely ours.",
+    "aboutCta": "Our story",
+    "eventsKicker": "Live",
+    "eventsTitle": "Hear us soon.",
+    "allEvents": "All concerts",
+    "pastEvents": "Past concerts",
+    "pastLabel": "Past",
+    "freeEntry": "Free entry",
+    "mediaKicker": "Catch the moment",
+    "mediaTitle": "BeJazzy through a lens.",
+    "mediaCta": "Open media gallery",
+    "joinKicker": "Your voice matters",
+    "joinTitle": "Maybe your voice is the one we are missing.",
+    "joinText": "Come to a rehearsal, meet the team and feel whether BeJazzy is your kind of place.",
+    "joinCta": "How to join",
+    "joinPageKicker": "Join us",
+    "joinPageTitle": "Come to an audition.",
+    "joinPageText": "Looking for a place where your voice can sound together with others? Read the audition information and write to us for the next step.",
+    "joinPageBack": "Back to website",
+    "joinPageContact": "Write to us",
+    "contact": "Contact",
+    "footer": "Music is a shared language. BeJazzy is how we speak it together.",
+    "funders": "Co-funded by",
+    "admin": "Edit content",
+    "close": "Close admin",
+    "save": "Save event",
+    "newEvent": "New event",
+    "adminTitle": "Content studio",
+    "adminSub": "A simple space for managing concerts.",
+    "date": "Date",
+    "eventName": "Event name",
+    "place": "Location",
+    "time": "Time",
+    "empty": "No events yet.",
+    "aboutPage": {
+      "subsections": [
+        {
+          "id": "band",
+          "navTitle": "BeJazzy Vocal Group",
+          "title": "BeJazzy – A Story Written by Voices",
+          "image": "images/bejazzy-group-photo.png",
+          "imageAlt": "Members of the vocal group BeJazzy",
+          "lead": "Some groups are created according to a plan. BeJazzy was born from a meeting of people, memories, and a love of singing.",
+          "sections": [
+            {
+              "body": "<p>The story of the vocal group BeJazzy began in 2013, when a large group of former singers received an invitation to perform at the celebration of the 30th anniversary of the Komorni zbor Gaudeamus, later known as Perpetuum Jazzile, on the big stage at Stožice in Ljubljana. Preparing for the event brought together people who had once sung together and revived their love for vocal jazz and a cappella singing.</p><p>But the first meeting was not the end of the story. Quite the opposite. In May 2014, trial rehearsals began, bringing former singing friends together once again. At first, the group performed under the name Perpetuum Gaudeamus, but it soon developed its own identity. On 23 December 2014, the Cultural Association BeJazzy was officially established, and the new vocal ensemble became part of Ljubljana’s cultural life.</p>"
+            },
+            {
+              "heading": "From Memories to a Sound of Their Own",
+              "body": "<p>At the beginning, the group focused mainly on repertoire that the singers already knew from their earlier years of singing together. But BeJazzy did not want to remain simply a revival of old memories. Its repertoire gradually expanded, and the group grew from an intimate ensemble into a strong, rhythmic vocal collective that over the years has included around thirty singers.</p><p>From the very beginning, the group has been artistically led by Ksenja Pirc, who brought to BeJazzy her experience as a singer and répétiteur with Perpetuum Jazzile, together with her teaching expertise. Her particular attention to harmony, rhythm, vocal detail, and stage expression has played an important role in shaping the group’s distinctive sound.</p><p>BeJazzy grew around the idea that the human voice can be used as a complete musical instrument. A cappella singing without instrumental accompaniment is at the heart of the group’s work, with an emphasis on multi-part harmonies, swing rhythm, jazz harmonies, and rhythmic vocal energy. A special challenge is presented by pieces that were originally written for instruments but have been rearranged so that they can be performed entirely by voices.</p>"
+            },
+            {
+              "heading": "Jazz, Pop, Evergreens, and a Lot of Curiosity",
+              "body": "<p>The core of BeJazzy’s repertoire consists of jazz standards, Slovenian popular songs, international evergreens, and contemporary vocal arrangements. The group also enjoys exploring folk songs and presenting them in a modern vocal form. Their programmes move freely from classic jazz to Slovenian pop songs, as well as songs from different countries and musical traditions.</p><p>From its early years, the group has also incorporated beatboxing and vocal percussion into its sound. Its concerts are not limited to the world of singing alone: over the years, BeJazzy has shared the stage with tango, tap and swing dancers, instrumentalists, guest vocalists, and other artists.</p>"
+            },
+            {
+              "heading": "First Concerts and Important Performances",
+              "body": "<p>In 2016, BeJazzy gave its first concert in the Red Hall at Ljubljana City Hall. In the same year, the group also appeared at Sozvočenja with the programme <em>Noč nad Ljubljanico</em> (<em>Night over the Ljubljanica</em>), a concept created by Ksenja Pirc. She received special recognition for the programme’s thematic design, which connected the Ljubljanica River, Ljubljana’s bridges, the starry sky, and the city itself into a musical story.</p><p>BeJazzy soon began performing outside Ljubljana as well. In 2018, the group took part in a joint concert with the American choir Con Brio in Ljubljana Cathedral.</p><p>In 2019, the group performed at the City Museum of Ljubljana in a concert that took the audience on a musical journey from the golden age of Slovenian popular music through jazz evergreens to Latin rhythms. The performance also featured beatboxer Sašo Vrabič and guest vocalists.</p>"
+            },
+            {
+              "heading": "Music That Travels",
+              "body": "<p>Over the years, BeJazzy has performed at numerous cultural events and choral gatherings. The group has appeared throughout Slovenia and at festivals and musical gatherings in Zrenjanin, Serbia; Trieste, Italy; and Šmihel, Austria.</p><p>The group regularly takes part in Ljubljana’s choral events, including Sozvočenja, Praznik petja, and the concert series Plečnik in a-cappella. A particularly important moment came in 2024, when BeJazzy performed as part of Plečnik in a-cappella. The programme presented a characteristic mixture of folk songs, Slovenian popular music, songs from different countries, and jazz standards, together with vocal versions of pieces that were originally instrumental.</p>"
+            },
+            {
+              "heading": "BeJazzy Is More Than a Stage",
+              "body": "<p>Although music is at the heart of everything they do, BeJazzy sees singing as a way of bringing people together.</p><p>The group brings together singers of different generations. The youthful energy of younger members and the experience of older singers complement one another, creating an environment in which every voice has its own place. Beyond concerts, the group is also connected by rehearsals, intensive singing sessions, and time spent together away from the stage.</p><p>BeJazzy also enjoys bringing its music to people who may not always be able to attend concerts themselves. The group has performed in homes for the elderly, hospitals, and charity events. Special attention is also given to young musicians, who are invited to take part in selected concert projects.</p>"
+            },
+            {
+              "heading": "Ten Years – and Beyond",
+              "body": "<p>An important milestone came in 2024, when BeJazzy celebrated ten years of its activities. Its anniversary project MISIJA MOGOČE was presented in November in the main hall of the Ljubljana Conservatory of Music and Ballet. Due to strong interest, the concert was repeated in March 2025.</p><p>The first part of the programme was based on the group’s characteristic a cappella sound. In the second part, the musical picture was expanded through collaboration with a jazz trio featuring drums, keyboards, and double bass, together with other guest performers.</p><p>The anniversary became an opportunity to look back at the journey the group had travelled while also looking ahead. BeJazzy continues to explore new possibilities of vocal expression, connect musicians of different generations, and invite guests from a variety of artistic backgrounds to its concerts.</p>"
+            }
+          ],
+          "todayHeading": "And Today?",
+          "todayBody": "<p>BeJazzy remains a vocal group from Ljubljana united by a love of a cappella singing, jazz, rhythm, and creating music together. Its story began as a reunion of old singing friends, but over the years it has grown into a musical story of its own.</p>",
+          "closing": "BeJazzy was not created because everything had to be perfect. It was created because people wanted to sing. Together.",
+          "final": "And that is where its voice lies."
+        },
+        {
+          "id": "leader",
+          "navTitle": "Artistic Director",
+          "title": "Ksenja Pirc",
+          "image": "images/leader-placeholder.png",
+          "imageAlt": "Temporary placeholder image (to be replaced)",
+          "lead": "The Voice That Connects Voices",
+          "sections": [
+            {
+              "body": "<p>Every musical group has its own sound. But BeJazzy also has a person who knows how to bring many individual voices together into one story. That person is <strong>Ksenja Pirc</strong> — musician, pianist, teacher, singer, arranger, and above all, the artistic director who has shaped the musical character of BeJazzy from the very beginning.</p><p>Her musical journey is closely connected with vocal music. As an <strong>alto singer and accompanist in the ensemble Gaudeamus</strong>, later known as Perpetuum Jazzile, she discovered the power of a large vocal ensemble and the world of jazz created without traditional instruments. That experience became an important part of her later creative work.</p><p>In 2013, while preparing for a major concert at Ljubljana's Stožice Arena, she reunited with a group of former singing friends. Old memories came back to life, together with the desire to begin a new musical chapter.</p><p><strong>In May 2014, the first rehearsals began.</strong></p><p>At first, no one could know where this reunion would lead. But from a few voices, a group gradually emerged — with its own name, its own energy, and its own character. Ksenja took on its artistic leadership and began shaping BeJazzy as a place where the human voice could become melody, harmony, rhythm, and expression.</p><p>Her vision is simple, yet demanding: <strong>to turn individual voices into one shared instrument</strong>.</p><p>For Ksenja, it is not only about singing the right notes. What matters is feeling, rhythm, tone colour, listening to one another, and that special moment when the whole group begins to breathe as one. Under her direction, jazz groove, a cappella harmonies, vocal rhythms, and playfulness have become part of BeJazzy's distinctive sound.</p><p>Ksenja is also a <strong>teacher and piano educator</strong>, and for many years she has passed her knowledge on to new generations of musicians. Yet her work goes beyond teaching. It is about encouraging curiosity, attentive listening, and the courage to find one's own musical voice.</p><p>In BeJazzy, that philosophy continues through every singer.</p><p>The group brings together people of different generations, different musical experiences, and different personalities. Ksenja's role is to transform all of this into something shared — that moment when individual voices merge into one piece of music.</p><p>Perhaps that is why her most important role is the one that cannot be written into any biography.</p><p><strong>Ksenja Pirc does not simply lead BeJazzy.<br/>She helps BeJazzy listen to itself.</strong></p><p>And whenever many voices come together on stage, her musical story is always part of that sound.</p>"
+            }
+          ]
+        },
+        {
+          "id": "org",
+          "navTitle": "BeJazzy Cultural Association",
+          "title": "BeJazzy Cultural Association",
+          "sections": [
+            {
+              "body": "<p class=\"org-seat\"><span class=\"org-seat-label\">Registered seat</span><br>Kulturno društvo BeJazzy<br>Tacenska cesta 125e<br>SI-1000 Ljubljana</p>"
+            }
+          ],
+          "final": "More content about the association is coming soon."
+        }
+      ]
+    }
+  }
+}

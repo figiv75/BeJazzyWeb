@@ -1,0 +1,52 @@
+[
+  {
+    "date": "12. 12. 2026",
+    "title": "Prižig BeJazzy",
+    "place": "Ljubljana · Antonov dom",
+    "time": "19:30",
+    "ticket": "#",
+    "past": false,
+    "freeEntry": false
+  },
+  {
+    "date": "21. 12. 2026",
+    "title": "Advent v Ljubljani",
+    "place": "Ljubljana · ",
+    "time": "20:00",
+    "ticket": "#",
+    "past": false,
+    "freeEntry": true
+  },
+  {
+    "date": "3. 9. 2026",
+    "title": "Festival LUPA",
+    "place": "Ljubljana · Prešernov trg",
+    "time": "17:30",
+    "ticket": "#",
+    "past": true
+  },
+  {
+    "date": "23. 6. 2026",
+    "title": "Koncert BeJazzy",
+    "place": "Ljubljana · Kazina Jazz Club",
+    "time": "20:00",
+    "ticket": "#",
+    "past": true
+  },
+  {
+    "date": "29. 6. 2026",
+    "title": "Koncert BeJazzy",
+    "place": "Mengeš · Salon klavirjev Benton",
+    "time": "20:00",
+    "ticket": "#",
+    "past": true
+  },
+  {
+    "date": "12. 12. 2025",
+    "title": "Prižig BeJazzy",
+    "place": "Ljubljana · Antonov dom",
+    "time": "20:00",
+    "ticket": "#",
+    "past": true
+  }
+]

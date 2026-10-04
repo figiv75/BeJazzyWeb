@@ -1,0 +1,13 @@
+body.admin-bar .topbar {
+    top: 32px;
+}
+
+@media (max-width: 782px) {
+    body.admin-bar .topbar {
+        top: 46px;
+    }
+}
+
+.about-tab {
+    white-space: nowrap;
+}
