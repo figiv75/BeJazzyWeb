@@ -114,6 +114,7 @@ copy.en.aboutPage = {
   ]
 };
 function t(key) { return copy[state.lang][key]; }
+function wrapBrand(html) { return html.replace(/(<[^>]*>)|BeJazzy/g, (match, tag) => tag || '<span class="brand">Be<span class="logo-j">J</span>azzy</span>'); }
 function escapeHtml(value) { return String(value).replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char])); }
 function eventRow(event, i, isPast) {
   const ticketCell = isPast ? '<span></span>' : event.freeEntry ? `<span class="event-free">${t('freeEntry')}</span>` : `<a class="arrow-link" href="${escapeHtml(event.ticket)}" target="_blank" rel="noopener noreferrer">${t('ticket')} <span>↗</span></a>`;
@@ -125,7 +126,7 @@ function footerHtml() { return `<footer><a class="wordmark" href="#home" data-vi
 function render() {
   document.documentElement.lang = state.lang;
   document.title = state.lang === 'sl' ? 'BeJazzy — Glas, ki nas povezuje' : 'BeJazzy — A voice that connects us';
-  document.getElementById('app').innerHTML = state.admin ? adminTemplate() : state.view === 'join-info' ? joinInfoTemplate() : state.view === 'all-events' ? allEventsTemplate() : state.view === 'about-page' ? aboutPageTemplate() : siteTemplate();
+  document.getElementById('app').innerHTML = wrapBrand(state.admin ? adminTemplate() : state.view === 'join-info' ? joinInfoTemplate() : state.view === 'all-events' ? allEventsTemplate() : state.view === 'about-page' ? aboutPageTemplate() : siteTemplate());
   const contact = document.querySelector('.contact, .join-page, .events-page, .about-page');
   const footer = document.querySelector('#app > footer');
   if (contact && footer) {
