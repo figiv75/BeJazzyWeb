@@ -39,8 +39,9 @@ $bj_blocks = preg_split('/^\s*---\s*$/m', (string) ($bj_active['body'] ?? ''));
             <?php endforeach; ?>
         </nav>
 
-        <?php if (!empty($bj_active['image'])) : ?>
-            <img class="about-photo" src="<?php echo bj_img($bj_active['image']); ?>" alt="<?php echo esc_attr($bj_active['imageAlt']); ?>" />
+        <?php $bj_photo = bj_image('about_' . $bj_active_id, (string) ($bj_active['imageAlt'] ?? '')); ?>
+        <?php if ($bj_photo['url']) : ?>
+            <img class="about-photo" src="<?php echo esc_url($bj_photo['url']); ?>" alt="<?php echo esc_attr($bj_photo['alt']); ?>" />
         <?php endif; ?>
 
         <?php if (!empty($bj_active['lead'])) : ?>

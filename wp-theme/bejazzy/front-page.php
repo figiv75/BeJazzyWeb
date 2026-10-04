@@ -106,7 +106,7 @@ $bj_join_url = bj_page_url('page-join.php');
 
     <section class="join section" id="join">
         <div class="join-figures">
-            <img src="<?php echo bj_img('images/singing_duo_jazz.png'); ?>" alt="" aria-hidden="true" />
+            <img src="<?php echo esc_url(bj_image('join_home')['url']); ?>" alt="" aria-hidden="true" />
         </div>
         <div class="join-content">
             <p class="eyebrow"><?php echo esc_html(bj_t('joinKicker')); ?></p>

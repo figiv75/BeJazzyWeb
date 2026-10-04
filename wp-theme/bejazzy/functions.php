@@ -344,7 +344,6 @@ function bj_about_subsections(string $lang): array {
             'body' => $override['body'] ?? $defaults['body'],
             'closing' => $override['closing'] ?? $defaults['closing'],
             'final' => $override['final'] ?? $defaults['final'],
-            'image' => $sub['image'] ?? '',
             'imageAlt' => $sub['imageAlt'] ?? '',
         ];
     }
@@ -416,6 +415,8 @@ function bj_render_settings_page(): void {
                 <?php endforeach; ?>
             <?php endforeach; ?>
 
+            <?php bj_render_image_fields(); ?>
+
             <?php submit_button('Shrani'); ?>
         </form>
     </div>
@@ -442,7 +443,74 @@ function bj_save_settings(): void {
     }
     update_option('bj_texts', $texts);
 
+    $images = [];
+    $image_input = isset($_POST['images']) && is_array($_POST['images']) ? wp_unslash($_POST['images']) : [];
+    foreach (array_keys(BJ_IMAGE_LABELS) as $key) {
+        $images[$key] = absint($image_input[$key] ?? 0);
+    }
+    update_option('bj_images', $images);
+
     wp_safe_redirect(add_query_arg(['page' => 'bejazzy-settings', 'updated' => 1], admin_url('options-general.php')));
     exit;
 }
 add_action('admin_post_bj_save_settings', 'bj_save_settings');
+
+const BJ_IMAGE_LABELS = [
+    'join_home' => 'Join us — ilustracija na naslovnici',
+    'join_poster_sl' => 'Join us — plakat avdicije (SL)',
+    'join_poster_en' => 'Join us — plakat avdicije (EN)',
+    'about_band' => 'O nas — Vokalna skupina BeJazzy',
+    'about_leader' => 'O nas — Umetniška vodja',
+    'about_org' => 'O nas — Kulturno društvo BeJazzy',
+];
+
+const BJ_IMAGE_DEFAULTS = [
+    'join_home' => 'images/singing_duo_jazz.png',
+    'join_poster_sl' => 'images/Avdicija-slo-new.png',
+    'join_poster_en' => 'images/Avdicija-eng-final.png',
+    'about_band' => 'images/bejazzy-group-photo.png',
+    'about_leader' => 'images/leader-placeholder.png',
+    'about_org' => '',
+];
+
+function bj_image(string $key, string $fallback_alt = ''): array {
+    $images = get_option('bj_images', []);
+    $id = (int) ($images[$key] ?? 0);
+    $url = $id ? wp_get_attachment_image_url($id, 'large') : false;
+    if ($url) {
+        $alt = (string) get_post_meta($id, '_wp_attachment_image_alt', true);
+        return ['url' => $url, 'alt' => $alt !== '' ? $alt : $fallback_alt];
+    }
+    $default = BJ_IMAGE_DEFAULTS[$key] ?? '';
+    return ['url' => $default !== '' ? bj_img($default) : '', 'alt' => $fallback_alt];
+}
+
+function bj_render_image_fields(): void {
+    echo '<h2>Fotografije</h2><table class="form-table">';
+    foreach (BJ_IMAGE_LABELS as $key => $label) {
+        $current = bj_image($key);
+        $default_url = BJ_IMAGE_DEFAULTS[$key] !== '' ? bj_img(BJ_IMAGE_DEFAULTS[$key]) : '';
+        $id = (int) (get_option('bj_images', [])[$key] ?? 0);
+        printf(
+            '<tr><th>%1$s</th><td><div class="bj-image-field" data-default="%2$s"><input type="hidden" class="bj-image-id" name="images[%3$s]" value="%4$d" />'
+            . '<img class="bj-image-preview" src="%5$s" alt="" style="max-width:220px;height:auto;display:%6$s;" />'
+            . '<p><button type="button" class="button bj-image-pick">Izberi sliko</button> <button type="button" class="button bj-image-clear">Ponastavi</button></p></div></td></tr>',
+            esc_html($label),
+            esc_attr($default_url),
+            esc_attr($key),
+            $id,
+            esc_url($current['url']),
+            $current['url'] ? 'block' : 'none'
+        );
+    }
+    echo '</table>';
+}
+
+function bj_admin_assets(string $hook): void {
+    if ($hook !== 'settings_page_bejazzy-settings') {
+        return;
+    }
+    wp_enqueue_media();
+    wp_enqueue_script('bj-admin', get_theme_file_uri('assets/admin.js'), [], BJ_VERSION, true);
+}
+add_action('admin_enqueue_scripts', 'bj_admin_assets');

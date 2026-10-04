@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) {
 }
 get_header();
 
-$bj_image = bj_lang() === 'en' ? 'images/Avdicija-eng-final.png' : 'images/Avdicija-slo-new.png';
+$bj_poster = bj_image(bj_lang() === 'en' ? 'join_poster_en' : 'join_poster_sl', bj_t('joinPageTitle'));
 ?>
 <div class="join-footer">
     <main class="join-page">
@@ -19,7 +19,7 @@ $bj_image = bj_lang() === 'en' ? 'images/Avdicija-eng-final.png' : 'images/Avdic
             <a class="text-link" href="<?php echo esc_url(bj_home_url()); ?>"><?php echo esc_html(bj_t('joinPageBack')); ?> <span>↗</span></a>
         </div>
         <div class="join-page-image">
-            <img src="<?php echo bj_img($bj_image); ?>" alt="<?php echo esc_attr(bj_t('joinPageTitle')); ?>" />
+            <img src="<?php echo esc_url($bj_poster['url']); ?>" alt="<?php echo esc_attr($bj_poster['alt']); ?>" />
         </div>
     </main>
     <?php bj_footer(); ?>
